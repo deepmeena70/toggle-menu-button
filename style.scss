@@ -1,0 +1,128 @@
+// colors
+$primary: #2a1f2d;
+$secondary: #56e39f;
+$feldgrau: #5b6c5d;
+$mint: #59c9a5;
+$red: #d81159;
+$vanilla: #fcf6b1;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.f-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hide-scrollbar {
+  &::-webkit-scrollbar {
+    //chrome
+    display: none;
+  }
+  -ms-overflow-style: none; //IE and Edge
+  scrollbar-width: none; // Firefox
+}
+
+body {
+  background: $primary;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.green {
+  background: $secondary;
+}
+
+.dull {
+  background: rgba($feldgrau, 0.4);
+}
+
+.red {
+  background: $red;
+}
+
+.vanilla {
+  background: $vanilla;
+}
+
+.toggle-btn {
+  position: relative;
+  margin: 5rem;
+  width: 140px;
+  height: 140px;
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+.toggle-btn-1 {
+  border: 1px solid rgba($mint, 0.7);
+  box-shadow: 0 0 6px rgba($mint, 0.7);
+  &:hover {
+    box-shadow: 0 0 18px rgba($mint, 0.7);
+  }
+}
+.toggle-btn-2 {
+  border: 1px solid rgba($red, 0.7);
+  box-shadow: 0 0 6px rgba($red, 0.7);
+  &:hover {
+    box-shadow: 0 0 18px rgba($red, 0.7);
+  }
+}
+.toggle-btn-3 {
+  border: 1px solid rgba($vanilla, 0.7);
+  box-shadow: 0 0 6px rgba($vanilla, 0.7);
+  &:hover {
+    box-shadow: 0 0 18px rgba($vanilla, 0.7);
+  }
+}
+
+.line {
+  width: 100px;
+  height: 3px;
+  transition: all ease 1s;
+}
+
+.line-1 {
+  top: 25%;
+}
+
+.line-3 {
+  top: 75%;
+}
+
+.text {
+  top:75%; 
+  color: $feldgrau;
+  font-size: 2.2em;
+  text-align: center;
+  animation: brighten 3s linear 0s 3 alternate-reverse both;
+}
+
+@keyframes brighten {
+    0%{
+        color: $vanilla;
+    }
+    50%{
+        color: $mint;
+    }
+    100%{
+        color: $red;
+    }
+}

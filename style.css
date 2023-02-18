@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.f-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: #2a1f2d;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.green {
+  background: #56e39f;
+}
+
+.dull {
+  background: rgba(91, 108, 93, 0.4);
+}
+
+.red {
+  background: #d81159;
+}
+
+.vanilla {
+  background: #fcf6b1;
+}
+
+.toggle-btn {
+  position: relative;
+  margin: 5rem;
+  width: 140px;
+  height: 140px;
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+.toggle-btn-1 {
+  border: 1px solid rgba(89, 201, 165, 0.7);
+  box-shadow: 0 0 6px rgba(89, 201, 165, 0.7);
+}
+.toggle-btn-1:hover {
+  box-shadow: 0 0 18px rgba(89, 201, 165, 0.7);
+}
+
+.toggle-btn-2 {
+  border: 1px solid rgba(216, 17, 89, 0.7);
+  box-shadow: 0 0 6px rgba(216, 17, 89, 0.7);
+}
+.toggle-btn-2:hover {
+  box-shadow: 0 0 18px rgba(216, 17, 89, 0.7);
+}
+
+.toggle-btn-3 {
+  border: 1px solid rgba(252, 246, 177, 0.7);
+  box-shadow: 0 0 6px rgba(252, 246, 177, 0.7);
+}
+.toggle-btn-3:hover {
+  box-shadow: 0 0 18px rgba(252, 246, 177, 0.7);
+}
+
+.line {
+  width: 100px;
+  height: 3px;
+  transition: all ease 1s;
+}
+
+.line-1 {
+  top: 25%;
+}
+
+.line-3 {
+  top: 75%;
+}
+
+.text {
+  top: 75%;
+  color: #5b6c5d;
+  font-size: 2.2em;
+  text-align: center;
+  animation: brighten 3s linear 0s 3 alternate-reverse both;
+}
+
+@keyframes brighten {
+  0% {
+    color: #fcf6b1;
+  }
+  50% {
+    color: #59c9a5;
+  }
+  100% {
+    color: #d81159;
+  }
+}/*# sourceMappingURL=style.css.map */
