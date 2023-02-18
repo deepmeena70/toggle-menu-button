@@ -65,8 +65,8 @@ body {
 .toggle-btn {
   position: relative;
   margin: 5rem;
-  width: 140px;
-  height: 140px;
+  min-width: 140px;
+  min-height: 140px;
   transition: all 0.4s ease;
   overflow: hidden;
 }
